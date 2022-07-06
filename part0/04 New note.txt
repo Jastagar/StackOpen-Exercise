@@ -42,9 +42,3 @@ end note
 
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
 server-->browser: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
-
-note on browser:
-browser process the GET request again in order to get
-the new data.json file that was just updated by the server
-since ajax is not used, all the file for the frontend address
-requested again by the server.
